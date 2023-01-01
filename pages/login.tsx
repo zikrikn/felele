@@ -112,7 +112,7 @@ export default function Login() {
                                 
                             //     })}
                         />
-                        {errors.username &&  errors.username.message}
+                        {/* {errors.username &&  errors.username.message} */}
 
                         <input onChange={handlePassword} id="PasswordPP" value={password} type="password" placeholder='password' className={styles.password}
                             // {...register("password", {
@@ -127,7 +127,7 @@ export default function Login() {
                             //     }
                             // })}
                         />
-                        {errors.password && errors.password.message}
+                        {/* {errors.password && errors.password.message} */}
                         
 
                         <input type="submit" placeholder='SUBMIT' className={styles.loginButton} />

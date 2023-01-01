@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { BsTrashFill } from 'react-icons/bs'
 import { FaHome } from 'react-icons/fa';
-import { MdLibraryBooks } from 'react-icons/Md';
+import { MdLibraryBooks } from 'react-icons/md';
 import { BsPlusLg } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
 import { GoPerson } from 'react-icons/go';
