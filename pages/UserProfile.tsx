@@ -15,7 +15,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 export default function UserProfile({token}) {
-    const [dataUser, setData] = useState([]);
+    const [dataUser, setData] = useState(null);
     useEffect(() => {
        
         async function getData() {
