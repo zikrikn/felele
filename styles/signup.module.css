@@ -1,0 +1,91 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.arrowback{
+    margin-right: 250px;
+}
+.back{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-left: 1px;
+}
+.formInput {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nama{
+    background: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 80px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.username{
+    background: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 80px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.password{
+    background: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 80px;
+    text-align: left;
+}
+
+.cekbox{
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.submit{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background: #c2b2a2;
+    padding: 10px 103px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.text{
+    width: 260px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.judul{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.textPanjang{
+    width: 260px;
+    font-weight: 300;
+    font-size: 13px;
+}

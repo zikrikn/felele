@@ -1,0 +1,68 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.judul{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.kotak {
+    width: 250px;
+    height: 100px;
+    background-color: #c2b2a2;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.foto{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.text{
+    font-weight: bold;
+    margin-left: 30px;
+}
+.logoutButton{
+    text-decoration: none;
+    display: inline-block;
+    color: red;
+    background: #DFDFDF;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #DFDFDF;
+    overflow-y: visible;
+}
+.iconbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+}
+

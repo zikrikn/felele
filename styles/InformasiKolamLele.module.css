@@ -1,0 +1,80 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.arrowback{
+    margin-right: 250px;
+    display: flex;
+}
+.back{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-left: 1px;
+}
+.next{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 250px;
+}
+.formInput {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.inputText{
+    background: #DFDFDF;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 80px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.inputDate{
+    background: #DFDFDF;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 130px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.submitButton{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background: #c2b2a2;
+    padding: 10px 100px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.judul{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text{
+    width: 260px;
+    font-weight: 300;
+    font-size: 13px;
+}

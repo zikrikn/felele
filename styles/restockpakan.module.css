@@ -1,0 +1,105 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrowback{
+    margin-right: 250px;
+}
+.back{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-left: 1px;
+}
+
+.restock{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.kolam{
+    width: 260px;
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-style: initial;
+    background: #DFDFDF;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 115px;
+}
+
+.jumlah{
+    background: #DFDFDF;
+    border-style: initial;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 80px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.submit{
+    display: inline-block;
+    color: black;
+    background: #c2b2a2;
+    padding: 10px 100px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #DFDFDF;
+    overflow-y: visible;
+}
+
+.iconbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+}
+
+.plus{
+    background-color: #C2B2A2;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.tombolplus{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    bottom: 28px;
+}

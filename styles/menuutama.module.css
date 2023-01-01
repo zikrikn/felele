@@ -1,0 +1,180 @@
+.container {
+    padding: 0 2rem;
+}
+  
+.main {
+    min-height: 100vh;
+    padding-top : 0rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 6rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MenuUtama{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.toolsbaratas{
+    width: 219px;
+
+}
+
+
+.restock{
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+}
+
+.restockpakan{
+
+    margin-top: 80px;
+    padding: 30px 40px;
+    background-color: #C2B2A2;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    
+
+}
+
+.toolsbaratas{
+    background-color: #D9D9D9;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.Search{
+    background: white;
+    border-style: initial;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.kolam{
+    display:flex;
+}
+
+.kolam1{
+    font-size: medium;
+    font-weight: bold;
+    background-color: #C2B2A2;
+    border-radius: 10px;
+    margin-right: 11px;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.kolam2{
+    font-size: medium;
+    font-weight: bold;
+    background-color: #C2B2A2;
+    border-radius: 10px;
+    margin-left: 11px;
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.icon{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #DFDFDF;
+    overflow-y: visible;
+}
+
+.iconbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+}
+
+.plus{
+    background-color: #C2B2A2;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.tombolplus{
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    bottom: 28px;
+}
+
+.judulTable{
+   background-color: #C2B2A2;
+   font-size: 18px;
+  
+}
+.nomorKolam {
+    display: inline-flex;
+}
+.deleteButton{
+    background-color:#C2B2A2;
+    border-radius: 5px;
+    font-size: 13px;
+  
+    position: relative;
+    left: 100px;
+}
+
+.table {
+    background-color: #C2B2A2;
+    border-radius: 10px;
+    padding: 0px 10px; 
+}
+
+.bodyTabel {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #dfdfdf;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.td {
+    display: flex;
+}
