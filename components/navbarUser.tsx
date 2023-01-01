@@ -1,6 +1,6 @@
 import { FaArrowLeft } from 'react-icons/fa'
 import { FaHome } from 'react-icons/fa';
-import { MdLibraryBooks } from 'react-icons/Md';
+import { MdLibraryBooks } from 'react-icons/md';
 import { BsPlusLg } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
 import { GoPerson } from 'react-icons/go';

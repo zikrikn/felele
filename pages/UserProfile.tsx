@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import profil from '../gambar/profil.png'
 import { FaHome } from 'react-icons/fa';
-import { MdLibraryBooks } from 'react-icons/Md';
+import { MdLibraryBooks } from 'react-icons/md';
 import { BsPlusLg } from 'react-icons/bs';
 import { FaBell } from 'react-icons/fa';
 import { GoPerson } from 'react-icons/go';
@@ -15,7 +15,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 export default function UserProfile({token}) {
-    const [dataUser, setData] = useState([]);
+    const [dataUser, setData] = useState(null);
     useEffect(() => {
        
         async function getData() {

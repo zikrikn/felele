@@ -2,8 +2,7 @@ import Head from 'next/head'
 import { ImHome } from 'react-icons/im'
 import { BsPencilFill } from 'react-icons/bs';
 import { BsFillPersonFill } from 'react-icons/bs';
-
-import styles from '../styles/Adminmenu.module.css'
+import styles from '../styles/adminmenu.module.css'
 import Link from 'next/link'
 
 export default function adminmenu() {
