@@ -8,19 +8,20 @@ import axios from "axios"
 import { useState, useEffect} from 'react'
 import router from 'next/router'
 import cookie from 'js-cookie'
-
+import { useForm } from 'react-hook-form'
 
 
 
 
 export default function Login() {
-    const apiEndPoint = 'https://api.lemes.my.id/auth/login';
+    const { register, formState: { errors }, handleSubmit } = useForm()
 
+    const apiEndPoint = 'https://api.lemes.my.id/auth/login';
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    const [errorUsername, seteErorUsername] = useState('')
-    const [errorPass, setErrorPass] = useState('')
+    // const [errorUsername, seteErorUsername] = useState('')
+    // const [errorPass, setErrorPass] = useState('')
 
     const handleUsername = (e) => {
         setUsername(e.target.value)
@@ -67,61 +68,7 @@ export default function Login() {
             })
             .catch(error => {
                     console.log(error);
-            });   
-
-
-        // console.log({username, password})
-        // if (username.length == 0 && password.length == 0){
-        //     seterrorUsername("Username tidak boleh Kosong")
-        //     setErrorPass("Password tidak boleh Kosong")
-        // }else if(username.length == 0 && password.length != 0){
-        //     seterrorUsername("Username tidak boleh Kosong")
-        //     setErrorPass("")
-        // }else if(username.length != 0 && password.length == 0){
-        //     seterrorUsername("")
-        //     setErrorPass("Password tidak boleh Kosong")
-        // }else if(username.length < 4 && password.length < 4){
-        //     seterrorUsername("Username harus lebih dari 4 karakter")
-        //     setErrorPass("Password harus lebih dari 4 karakter")
-        // }else if(username.length > 4 && password.length < 4){
-        //     seterrorUsername("")
-        //     setErrorPass("Password harus lebih dari 4 karakter")
-        // }else if(username.length < 4 && password.length > 4){
-        //     seterrorUsername("Username harus lebih dari 4 karakter")
-        //     setErrorPass("")
-        // }else{
-        //     axios.post(apiEndPoint, {
-        //         "username": username,
-        //         "password": password,
-        //         "Client credentials location": "basic",
-        //         "client_id" : "",
-        //         "client_secret": ""
-        //     })
-        //         .then(res => {
-                    // fetch("/api/login", {
-                    //     method : "post",
-                    //     headers: {
-                    //         "Content-Type" : "application/json",
-                    // },
-                    //     body: JSON.stringify({token : username})
-                    // })
-                    // console.log(res.data)
-                    
-                    // if ((username == "admin") && (password == "admin")){
-                    //     alert("anda adalah admin")
-                    //     router.push('adminmenu')
-                    // }else{
-                    //     router.push('InformasiKolamLele')
-                    // }
-                    
-                    
-        //         })
-        //         .catch(error => {
-        //             console.log(error);
-                
-        //         });
-        // }
-        
+            });    
     }
     
     return (
@@ -148,13 +95,40 @@ export default function Login() {
                         Your personal catfish monitoring
                     </p>
                 </div>
-                <form onSubmit={handleApi}>
+                <form onSubmit={handleSubmit(handleApi)}>
                     <div className={styles.input}>
-                        <input onChange={handleUsername} id="username" value={username} type="text" placeholder='username' className={styles.username}/>
-                        {errorUsername && <p className="error">{errorUsername}</p>}
+                        <input onChange={handleUsername} value={username} type="text" placeholder='username' className={styles.username}
+                            // {...register("username", {
+                            //       required: 'Username is required',
+                            //       minLength: {
+                            //         value: 4,
+                            //         message: 'Username must have at least 4 characters'
+                            //       },
+                                
+                            //       maxLength: {
+                            //         value: 6,
+                            //         message: 'Username must be less than 6 characters'
+                            //       }
+                                
+                            //     })}
+                        />
+                        {errors.username &&  errors.username.message}
 
-                        <input onChange={handlePassword} id="PasswordPP" value={password} type="password" placeholder='password' className={styles.password}/>
-                        {errorPass && <p className="error">{errorPass}</p>}
+                        <input onChange={handlePassword} id="PasswordPP" value={password} type="password" placeholder='password' className={styles.password}
+                            // {...register("password", {
+                            //     required: 'Password is required',
+                            //     minLength: {
+                            //         value: 4,
+                            //         message: 'Password must have at least 4 characters'
+                            //     }, 
+                            //     maxLength : {
+                            //         value: 6,
+                            //         message: 'Password must be less than 6 characters'
+                            //     }
+                            // })}
+                        />
+                        {errors.password && errors.password.message}
+                        
 
                         <input type="submit" placeholder='SUBMIT' className={styles.loginButton} />
                     </div>
